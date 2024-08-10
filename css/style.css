@@ -1,18 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 /* * {
   margin: 0;
   padding: 0;
 } */
 
-.main-title {
-  text-align: center;
+body {
+  font-family: "poppins";
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+header h1 {
+  margin: 0;
+}
+
+header h1:first-child {
+  margin-right: 20px;
+}
+
 main {
   display: flex;
+  flex-wrap: wrap;
+
+  padding: 20px;
 }
 form {
-  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
   background-color: aquamarine;
 }
+form div {
+  margin-bottom: 20px;
+}
+
+form input[type="radio"] {
+  margin-right: 10px;
+}
+
+form input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d5fd2;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:not(.btn-reset):hover {
+  background-color: salmon;
+}
+
+form button.btn-reset:hover {
+  background-color: rgb(160, 14, 14);
+}
+
+.btn-reset {
+  background-color: #967878;
+}
+p {
+  justify-content: center;
+}
+
 aside {
-  padding: 48px;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hasil-bmi {
+  /* border: 1px solid black; */
+  background-color: aquamarine;
+  width: 100%;
+  height: 350px;
+}
+h4 {
+  margin: 5px;
+  padding: 9px;
 }

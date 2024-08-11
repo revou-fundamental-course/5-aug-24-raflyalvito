@@ -49,8 +49,7 @@ form input[type="number"] {
   width: 100%;
 }
 
-form button,
-.btn-gizi {
+button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -59,9 +58,7 @@ form button,
   cursor: pointer;
 }
 
-button:hover,
-.btn-dwnld:hover,
-.btn-gizi:hover {
+button:hover {
   background-color: rgb(40, 169, 4);
   transition: background-color 0.2s ease-in-out;
 }
@@ -110,4 +107,33 @@ h5 {
   color: #fff;
   cursor: pointer;
   position: absolute;
+}
+.btn-konsul {
+  position: relative;
+  top: 25px;
+  left: 63px;
+}
+
+.container {
+  width: 100%;
+  height: 245px;
+  background-color: aquamarine;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-akhir {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
 }

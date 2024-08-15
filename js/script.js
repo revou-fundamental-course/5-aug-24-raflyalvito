@@ -35,29 +35,6 @@ btn.addEventListener("click", function () {
     status = "obesitas";
   }
 
-  //   const commentElement = document.getElementById("comment");
-  //   let commentText;
-  //   switch (status) {
-  //     case "kurang berat badan":
-  //       commentText = " Anda perlu meningkatkan berat badan Anda";
-  //       break;
-  //     case "normal":
-  //       commentText = " Berat badan Anda sudah ideal";
-  //       break;
-  //     case "kelebihan berat badan":
-  //       commentText = " Anda perlu mengurangi berat badan Anda";
-  //       break;
-  //     case "obesitas":
-  //       commentText = " Anda perlu mengurangi berat badan Anda secara signifikan";
-  //       break;
-  //     default:
-  //       commentText = "";
-  //   }
-
-  //   commentElement.innerHTML = commentText;
-
-  //   document.getElementById("hasil-bmi").innerHTML = bmi;
-
   document.getElementById(
     "comment"
   ).innerHTML = `kamu adalah: <span> ${status} </span>`;

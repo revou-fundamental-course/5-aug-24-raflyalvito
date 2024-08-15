@@ -204,6 +204,13 @@ ul li {
     padding: 5px 10px;
   }
 
+  .btn-konsul,
+  .konsul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
   /* Ubah ukuran aside menjadi lebih kecil */
   aside {
     margin: 5px;
@@ -218,6 +225,7 @@ ul li {
   /* Ubah ukuran container menjadi lebih kecil */
   .container {
     height: 180px;
+    margin-bottom: 5px;
   }
 
   /* Ubah ukuran container-akhir menjadi lebih kecil */
@@ -228,10 +236,5 @@ ul li {
   /* Ubah ukuran ul menjadi lebih kecil */
   ul {
     padding: 10px;
-  }
-
-  /* Ubah ukuran li menjadi lebih kecil */
-  ul li {
-    margin-bottom: 10px;
   }
 }

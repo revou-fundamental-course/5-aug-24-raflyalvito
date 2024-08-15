@@ -11,11 +11,11 @@
   <body>
     <header>
       <h1>Kalkulator DMI</h1>
-      <h1>Hasil</h1>
     </header>
 
     <main>
       <aside>
+        <h2>Informasi</h2>
         <article>
           <p>
             Berat badan ideal adalah impian semua orang. Tidak hanya memiliki
@@ -49,7 +49,7 @@
 
           <div>
             <h3>Usia(Tahun)</h3>
-            <input type="number" placeholder="Tahun" />
+            <input type="number" placeholder="Tahun" id="usia"/>
           </div>
 
           <div>
@@ -59,7 +59,7 @@
 
           <div>
             <button id="kalkulasi">Hitung BMI</button>
-            <button class="btn-reset">Reset</button>
+            <button id="reset" class="btn-reset">Reset</button>
           </div>
         </form>
 
@@ -87,28 +87,28 @@
       </aside>
 
       <aside>
+        <h2>Hasil</h2>
         <section>
           <div class="hasil-bmi">
-            <h4>hasil bmi</h4>
-
+            <h4>BMI kamu adalah</h4>
+            <div class="hasil" id="hasil-bmi">00.00</div>
+            <p id="comment" ></p>
             <button class="btn-dwnld">Download Hasil BMI</button>
           </div>
         </section>
 
         <article>
-          <h5>Hasil BMI diantara 23 dan 25</h5>
+          <br>
+          <h6>
+            kurang berat badan - BMI dibawah 18.5 <br>
+            normal berat badan - BMI diantara 18.5 dan 24 <br>
+            kelebihan berat badan - BMI antara 25 dan 29.9 <br>
+            obesitas - BMI diatas 30
+          </h6>
+   
           <br />
-          <p>
-            Anda berada dalam kategori overweight atau berat badan berlebih.
-            <br />
-            Cara terbaik untuk menurunkan berat badan adalah dengan mengatur
-            kalor makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada
-            dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan
-            hingga batas normal.
-          </p>
-          <br />
-          <button class="">Konsultasi Ahli Gizi Via Aplikasi</button>
-          <button class="">Registrasi Online Ahli Gizi</button>
+          <button >Konsultasi Ahli Gizi Via Aplikasi</button>
+          <button >Registrasi Online Ahli Gizi</button>
           <br />
           <br />
           <p>

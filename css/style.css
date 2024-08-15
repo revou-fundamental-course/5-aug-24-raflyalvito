@@ -12,7 +12,7 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   padding: 10px;
   background-color: #333;
   color: #fff;
@@ -86,13 +86,44 @@ aside {
   background-color: aquamarine;
   width: 100%;
   height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.hasil-bmi h4 {
+  position: absolute;
+  top: 20px;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  font-weight: 400px;
+  font-size: 25px;
+}
+.hasil {
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #0d5fd2;
+}
+span {
+  font-size: 25px;
+  font-weight: 600;
+  color: salmon;
+}
+
 h4 {
   margin: 5px;
   padding: 9px;
 }
 h5 {
   margin-top: 8px;
+}
+h6 {
+  text-align: center;
+  margin: 5px;
+  font-size: 15px;
+  padding: 16px;
+  line-height: 2;
 }
 
 .btn-dwnld {
@@ -136,4 +167,71 @@ ul {
 
 ul li {
   list-style: none;
+}
+
+/* Media query untuk perangkat mobile (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  /* Ubah ukuran font menjadi lebih kecil */
+  body {
+    font-size: 14px;
+  }
+
+  /* Ubah ukuran header menjadi lebih kecil */
+  header {
+    padding: 5px;
+  }
+
+  aside {
+    flex: none; /* remove flex: 1 */
+    margin: 5px;
+    padding: 10px;
+    width: 100%; /* add width: 100% */
+  }
+
+  /* Ubah ukuran form menjadi lebih kecil */
+  form {
+    padding: 10px;
+  }
+
+  /* Ubah ukuran input menjadi lebih kecil */
+  input[type="number"] {
+    padding: 5px;
+    width: 80%;
+  }
+
+  /* Ubah ukuran button menjadi lebih kecil */
+  button {
+    padding: 5px 10px;
+  }
+
+  /* Ubah ukuran aside menjadi lebih kecil */
+  aside {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  /* Ubah ukuran hasil-bmi menjadi lebih kecil */
+  .hasil-bmi {
+    height: 200px;
+  }
+
+  /* Ubah ukuran container menjadi lebih kecil */
+  .container {
+    height: 180px;
+  }
+
+  /* Ubah ukuran container-akhir menjadi lebih kecil */
+  .container-akhir {
+    padding: 10px;
+  }
+
+  /* Ubah ukuran ul menjadi lebih kecil */
+  ul {
+    padding: 10px;
+  }
+
+  /* Ubah ukuran li menjadi lebih kecil */
+  ul li {
+    margin-bottom: 10px;
+  }
 }
